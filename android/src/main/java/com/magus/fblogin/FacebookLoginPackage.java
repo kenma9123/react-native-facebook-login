@@ -17,7 +17,7 @@ public class FacebookLoginPackage implements ReactPackage {
         return Arrays.<NativeModule>asList(new FacebookLoginModule(reactContext));
     }
 
-    @Override
+    // Override on this method is Deprecated in RN 0.47.0 and up
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
